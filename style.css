@@ -118,19 +118,43 @@ body {
 }
 
 .featured-content {
-  height: 50vh;
+  height: 29vh;
   padding: 50px;
 }
 
-.featured-title {
-  width: 200px;
+.featured-content2 {
+  height: 88vh;
+  padding: 50px;
 }
 
-.featured-desc {
-  width: 500px;
-  color: lightgray;
-  margin: 30px 0;
+
+
+.featured-title {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  transform: translate(-50%, -50%);
 }
+
+
+  .featured-desc {
+  width: 400px;
+  color: lightgray;
+  margin: 20px auto; /* Centers horizontally */
+  display: flex;
+  padding-top: 20px;
+  justify-content: center; /* Centers content horizontally inside the div */
+  align-items: center; /* Centers content vertically inside the div */
+  height: 50vh; /* Ensure it takes up the full height of the viewport */
+  text-align: center; /* Center the text inside the div */
+ 
+  border-radius: 20px; /* Rounds the corners */
+}
+
+
+
 
 .featured-button {
   background-color: #4dbf00;
@@ -151,16 +175,20 @@ body {
   overflow: hidden;
 }
 
+.movie-list-title {
+  color: rgb(225, 225, 225)
+}
+
 .movie-list {
   display: flex;
   align-items: center;
-  height: 300px;
+  height: 245px;
   transform: translateX(0);
   transition: all 1s ease-in-out;
 }
 
 .movie-list-item {
-  margin-right: 30px;
+  margin-right: 25px;
   position: relative;
 }
 
@@ -178,16 +206,18 @@ body {
 
 .movie-list-item-img {
   transition: all 1s ease-in-out;
-  width: 270px;
-  height: 200px;
+  width: 280px;
+  height: 190px;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 .movie-list-item-title {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 0 10px;
+  border-radius:7px;
   font-size: 32px;
+  color:aliceblue;
   font-weight: bold;
   position: absolute;
   top: 10%;
@@ -197,9 +227,10 @@ body {
 }
 
 .movie-list-item-desc {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-size: 14px;
+  border-radius: 7px;
   position: absolute;
   top: 30%;
   left: 50px;
@@ -211,7 +242,7 @@ body {
 .movie-list-item-button {
   padding: 10px;
   background-color: #4dbf00;
-  color: white;
+  color: rgb(252, 244, 244);
   border-radius: 10px;
   outline: none;
   border: none;
@@ -226,9 +257,9 @@ body {
 .arrow {
   font-size: 120px;
   position: absolute;
-  top: 90px;
+  top: 70px;
   right: 0;
-  color: lightgray;
+  color: rgb(253, 252, 252);
   opacity: 0.5;
   cursor: pointer;
 }
@@ -268,4 +299,34 @@ body {
     .menu-container{
         display: none;
     }
+
+    .music-control {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  #music-toggle {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  
+  #music-toggle:hover {
+      color: #ffb400;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+}
+
 }

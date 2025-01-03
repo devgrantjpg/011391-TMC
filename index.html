@@ -13,23 +13,27 @@
 </head>
 
 <body>
+    <audio id="background-music" autoplay loop>
+        <source src="path/file/song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="navbar">
         <div class="navbar-container">
             <div class="logo-container">
-                <h1 class="logo"></h1>
+                <h1 class="logo">TMC</h1>
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item active">Home</li>
                     <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Trending</li>
+                    <li class="menu-list-item">Kids TV</li>
                     <li class="menu-list-item">Series</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Trends</li>
 
                 </ul>
             </div>
             <div class="profile-container">
-                <img class="profile-picture" src="img/grants.jpg" alt="">
+                <img class="profile-picture" src="img/filelatest/grants.jpg" alt="">
                 <div class="profile-text-container">
                     <span class="profile-text">Profile</span>
                     <i class="fas fa-caret-down"></i>
@@ -39,9 +43,19 @@
                     <i class="fas fa-sun toggle-icon"></i>
                     <div class="toggle-ball"></div>
                 </div>
+                
+            </div>
+            <div class="music-control">
+                <button id="music-toggle" onclick="toggleMusic()">
+                    <i class="fas fa-pause" id="play-icon"></i>
+                    <i class="fas fa-play" id="pause-icon" style="display: none;"></i> 
+                    <span id="music-status">Pause Music</span>
+                </button>
             </div>
         </div>
     </div>
+
+
     <!-- <div class="sidebar">
         <i class="left-menu-icon fas fa-search"></i>
         <i class="left-menu-icon fas fa-home"></i>
@@ -53,12 +67,15 @@
     </div> -->
     <div class="container">
         <div class="content-container">
+            
             <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/wtwo.jpg');">
-                <!-- <img class="featured-title" src="img/baycinema.jpg" alt=""> -->
-                <p class="featured-desc">GLADIATOR 2</p>
-                <button class="featured-button"><a href="file1/15.html">Watch Movie Trailer</a></button>
+            
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0.3), #151515), url('img/filelatest/3208d923tr.jpg');">
+               <!-- <img class="featured-title" src="img/filelatest/baycinema.jpg" alt=""> -->
+                <p class="featured-desc"></p>
+                <!-- <button class="featured-button"><a href="file1/15.html">Watch Movie Trailer</a></button> -->
             </div>
+
             <div class="movie-list-container">
                 <h1 class="movie-list-title">TRENDING</h1>
                 <div class="movie-list-wrapper">
@@ -153,7 +170,7 @@
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/filelatest/missionimpossible.jpg" alt="">
-                            <span class="movie-list-item-title"></span>
+                            <span class="movie-list-item-title">MI:8</span>
                             <p class="movie-list-item-desc">Mission Impossible 8: The final reckoning.</p>
                                 <button class="movie-list-item-button"><a href="file1/10.html">
                                     Watch
@@ -190,7 +207,7 @@
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/filelatest/robots.jpg" alt="">
                             <span class="movie-list-item-title">Monsters Of Man</span>
-                            <p class="movie-list-item-desc">A robotics company teams up with a corrupt CIA agent undergoing an illegal, unsanctioned military operation.</p>
+                            <p class="movie-list-item-desc">A robotics company teams up with a corruption and unsanctioned military operation.</p>
                                 <button class="movie-list-item-button"><a href="file1/14.html">
                                     Watch
                                 </a>
@@ -200,10 +217,10 @@
                     <i class="fas fa-chevron-right arrow"></i>
                 </div>
             </div>
-            <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/zjgs096khv591.jpg');">
+            <div class="featured-content2"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/3208d923tr.jpg');">
                 <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
-                <p class="featured-desc"></p>
+                <!-- <p class="featured-desc"></p> -->
                 <!-- <button class="featured-button"></button> -->
             </div>
         </div>
@@ -333,6 +350,27 @@
         </div>
     </div> --> 
     <script src="app.js"></script>
+
+    <script>
+        function toggleMusic() {
+            var music = document.getElementById('background-music');
+            var playIcon = document.getElementById('play-icon');
+            var pauseIcon = document.getElementById('pause-icon');
+            var statusText = document.getElementById('music-status');
+
+            if (music.paused) {
+                music.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline-block';
+                statusText.textContent = 'Pause Music';
+            } else {
+                music.pause();
+                playIcon.style.display = 'inline-block';
+                pauseIcon.style.display = 'none';
+                statusText.textContent = 'Play Music';
+            }
+        }
+    </script>
 </body>
 
 </html>
