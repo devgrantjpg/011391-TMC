@@ -1,1 +1,1 @@
-This file content is by TMC. © 2025 All rights reserved. 
+This file content is by TMCTV.org © 2025 All rights reserved. 
