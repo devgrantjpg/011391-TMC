@@ -5,7 +5,8 @@
 h2 {
  font-size: 18px;
  color:#f7f7f7;
- font-weight: lighter;
+ font-weight: 300;
+ margin-right: 5px;
 }
 
 body {
@@ -131,12 +132,17 @@ body {
 }
 
 .content-container {
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .featured-content {
   height: 29vh;
   padding: 50px;
+}
+
+.featured-content3 {
+ height: 100vh;
+ width: 95vw;
 }
 
 .featured-content2 {
@@ -189,7 +195,7 @@ body {
 }
 
 .movie-list-container {
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 .movie-list-wrapper {
