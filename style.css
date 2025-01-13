@@ -147,10 +147,37 @@ body {
   margin-right: 0;  /* Remove or reduce margin on the right */
 }
 
+.featured-content3x {
+  height: 65vh;
+  width: 100vw;
+  margin-left: -17px; /* Add this to push the image to the left */
+  margin-right: 0;  /* Remove or reduce margin on the right */
+}
+
+.featured-content3xx {
+  height: 70vh;
+  width: 100vw;
+  margin-left: -17px; /* Add this to push the image to the left */
+  margin-right: 0;  /* Remove or reduce margin on the right */
+}
+
 .featured-content2 {
   height: 75vh;
   padding: 70px;
 }
+
+
+.movie-list-item-C {
+  margin-top: 0; /* Moves the container to the top */
+
+}
+
+.movie-list-item-CX {
+  margin-top: 30px;
+
+}
+
+
 
 
 
@@ -183,6 +210,25 @@ body {
   padding: 10px; /* Add padding for spacing */
 }
 
+.featured-descx {
+  width: 400px;
+  color: lightgray;
+  margin-left: 40px; /* Left margin */
+  margin-bottom: -10px; /* Bottom margin */
+  display: flex;
+  flex-direction: column; /* Aligns items vertically */
+  justify-content: flex-end; /* Aligns content to the bottom */
+  align-items: flex-start; /* Aligns content to the left */
+
+  height: 50vh; /* Ensure it takes up the full height of the viewport */
+  text-align: left; /* Align the text to the left */
+  font-family: 'Cinzel', serif; /* Apply the Cinzel font */
+  font-size: 50px; /* Adjust the font size as needed */
+  font-weight: 700; /* Use bold weight for emphasis */
+  color: #cdc4c4; /* Set the font color to white */
+  border-radius: 20px; /* Rounds the corners */
+  padding: 10px; /* Add padding for spacing */
+}
 
 
 .featured-button {
@@ -237,7 +283,7 @@ body {
 .movie-list-item-img {
   transition: all 1s ease-in-out;
   width: 280px;
-  height: 190px;
+  height: 198px;
   object-fit: cover;
   border-radius: 0px;
 }
