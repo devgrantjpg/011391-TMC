@@ -154,6 +154,22 @@ body {
   margin-right: 0;  /* Remove or reduce margin on the right */
 }
 
+.featured-content3xc {
+  height: 75vh;
+  width: 93vw;
+  margin-left: -17px; /* Add this to push the image to the left */
+  margin-right: 0;  /* Remove or reduce margin on the right */
+}
+
+.featured-content3xcc {
+  height: 55vh;
+  width: 93vw;
+  margin-left: -17px; /* Add this to push the image to the left */
+  margin-right: 0;  /* Remove or reduce margin on the right */
+}
+
+
+
 .featured-content3xx {
   height: 70vh;
   width: 100vw;
