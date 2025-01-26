@@ -368,7 +368,7 @@ a.movie-item:hover {
     display: block;
     position: relative;
     overflow: hidden;
-    padding-top: 110%;
+    padding-top: 80%;
     cursor: pointer;
 }
 
@@ -411,7 +411,7 @@ a.movie-item:hover {
 }
 
 .section {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 .section-header {
@@ -607,7 +607,7 @@ footer .content {
         background-color: #000000;
         flex-direction: column;
         width: 80%;
-        height: 100vh;
+        height: 70vh;
         padding: 20px;
         transition: 0.3s ease-in-out;
     }
@@ -620,26 +620,5 @@ footer .content {
         left: 0;
     }
 
-    footer {
-        text-align: center; /* Center text inside footer */
-        padding: 20px 0; /* Add some padding to the footer */
-        background-color: #333; /* Example background color */
-        color: white; /* White text */
-    }
-    
-    footer .social-icons a {
-        margin: 0 10px; /* Space out social media links */
-        color: white;
-        text-decoration: none;
-    }
-    
-    footer li {
-        list-style-type: none; /* Remove bullet points */
-        padding: 5px 0;
-    }
-    
-    footer a:hover {
-        text-decoration: underline; /* Underline links on hover */
-    }
     
 }
