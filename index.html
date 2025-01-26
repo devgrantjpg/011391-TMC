@@ -1,463 +1,839 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>
+        TMCTV
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="app.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&family=Cinzel:wght@400;700&display=swap"
-        rel="stylesheet"> <!-- Add Cinzel font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>movies</title>
 </head>
 
 <body>
-    <audio id="background-music" autoplay loop>
-        <source src="path/file/mizt.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
 
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container">
-                <h1 class="logo">TMC TV</h1>
-            </div>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-list-item"><a href="j1s302_2138-319_913931c330e49r076xj202138-319.html">Cartoons</a></li>
-                    <!-- <li class="menu-list-item">Action</li>
-                    <li class="menu-list-item">Trending</a></li> -->
-                    <li class="menu-list-item">Kids TV</a></li>
-                    <!-- <li class="menu-list-item">Series</a></li> -->
-                    <!-- <li class="menu-list-item"><a href="genres/movies.html/">Series</a></li> -->
-
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <div>TMC TV</div>
+                <ul class="nav-menu" id="nav-menu">
+                    <!-- <li><a href="#">Home</a></li>
+                    <li><a href="#">Genre</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">About</a></li> -->
+                    <li>
+                        <a href="#">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-               <div class="profile-container">
-                <!-- <img class="profile-picture" src="img/filelatest/grants.jpg" alt="">
-                <div class="profile-text-container">
-                    <span class="profile-text">Profile</span>
-                    <i class="fas fa-caret-down"></i>
-                </div> -->
-                <div class="toggle">
-                    <i class="fas fa-moon toggle-icon"></i>
-                    <i class="fas fa-sun toggle-icon"></i>
-                    <div class="toggle-ball"></div>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
                 </div>
-                
-            </div>
-            <div class="music-control">
-                <button id="music-toggle" onclick="toggleMusic()">
-                    <i class="fas fa-play" id="play-icon"></i>
-                    <i class="fas fa-pause" id="pause-icon" style="display: none;"></i> 
-                    <span id="music-status">Pause Music</span>
-                </button>
             </div>
         </div>
     </div>
+    <!-- END NAV -->
 
-
-    <!-- <div class="sidebar">
-        <i class="left-menu-icon fas fa-search"></i>
-        <i class="left-menu-icon fas fa-home"></i>
-        <i class="left-menu-icon fas fa-users"></i>
-        <i class="left-menu-icon fas fa-bookmark"></i>
-        <i class="left-menu-icon fas fa-tv"></i>
-        <i class="left-menu-icon fas fa-hourglass-start"></i>
-        <i class="left-menu-icon fas fa-shopping-cart"></i>
-    </div> -->
-    
-    <div class="container">
-         <div class="content-container">
-            <div class="featured-content3"
-            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/mscndct.jpg');">
-             <!-- <img class="featured-title" src="img/3208d923t.jpg" alt="">  -->
-             <p class="featured-desc">Misconduct</p> 
-             <h2>An ambitious Lawyer takes a case against an Executive of a pharmaceutical company</h2>
-             <button class="featured-button"><a href="0098786685423454/1121599873738309309a8d9ad9f9w.html">Watch</a></button> 
-        </div> 
-        <div class="movie-list-container">
-            <h1 class="movie-list-title">TRENDING</h1>
-            <div class="movie-list-wrapper">
-                <div class="movie-list">
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/5FrUP4wnFWdlA2huAeJxn1WIR0O.jpg">
-                        <span class="movie-list-item-title">4 Assasins</span>
-                        <p class="movie-list-item-desc">In the cosmopolitan city of Hong Kong, Assasin Marcus Nang was summoned to meet with three professional colleagues to resolve unfinished business.</p>
-                            <button class="movie-list-item-button"><a href="098786685423454/8499r9gjfgu7yenem_4240it.html">
-                                Watch
-                            </a>
-                            </button>
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <!-- HERO SLIDE -->
+        <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/traintobusan.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Train to busan
+                            </div>
+                            <!-- <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div> -->
+                            <div class="item-content-description top-down delay-4">
+                                Passengers struggle to survive on the train from Seoul to Busan while a zombie virus breaks out in South Korea.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <!-- <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i> -->
+                                    <a href="00098786685423454/90098786685423454.html"><button class="button">Watch</button></a>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    
-                    <!-- <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/thepoisonrose.jpg" alt="">
-                        <span class="movie-list-item-title">Poison Rose</span>
-                        <p class="movie-list-item-desc">investigator Carson Phillips is hired to conduct an investigation in his Texas hometown</p>
-                            <button class="movie-list-item-button"><a href="file1/9s00404ll5l9r8fdes_d923i3k4keee.html">
-                                Watch
-                            </a>
-                            </button>
-                    </div> -->
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/6guf9hmdpuq11.jpg" alt="">
-                        <span class="movie-list-item-title">Leprechaun</span>
-                        <p class="movie-list-item-desc">A leprechaun gets all his gold stolen by a tourist. When he gets the opportunity to follow the thief, he decides to go for vengeance. </p>
-                            <button class="movie-list-item-button"><a href="098786685423454/1002j3iow2424204024221.html">
-                                Watch
-                            </a>
-                            </button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/jeeperscreepers2.jpg" alt="">
-                        <span class="movie-list-item-title">Jeepers Creeper 2</span>
-                        <p class="movie-list-item-desc">the creeper, a killer who targets bus full of highschool students.</p>
-                            <button class="movie-list-item-button"><a href="098786685423454/11uwmee88473625294llhy.html">
-                                Watch
-                            </a>
-                            </button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/terrifier.jpg" alt="">
-                        <span class="movie-list-item-title">Terrifier</span>
-                        <p class="movie-list-item-desc">A maniac clown goes after two friends and who ever gets in his way, in this slasher film.</p>
-                            <button class="movie-list-item-button"><a href="098786685423454/324ko2khh2_53523.html">
-                                Watch
-                            </a>
-                            </button>
-                    </div>
-                    <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/andromeda.jpeg" alt="">
-                        <span class="movie-list-item-title">Andromeda</span>
-                        <p class="movie-list-item-desc">A man embarks on a space journey to find his long-lost father, a researcher who went on an expedition to the farthest reaches of the universe and mysteriously disappeared.</p>
-                            <button class="movie-list-item-button"><a href="098786685423454/13ddi329fj3933k08c32f.html">
-                                Watch
-                            </a>
-                            </button>
-                    </div>
-                    <!-- <div class="movie-list-item">
-                        <img class="movie-list-item-img" src="img/filelatest/robots.jpg" alt="">
-                        <span class="movie-list-item-title">Monsters Of Man</span>
-                        <p class="movie-list-item-desc">A robotics company teams up with a corruption and unsanctioned military operation.</p>
-                            <button class="movie-list-item-button"><a href="file1/140394829ffm4oe_d92393ko.html">
-                                Watch
-                            </a>
-                            </button>
-                    </div> -->
                 </div>
-                <i class="fas fa-chevron-right arrow"></i>
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="featured-content3"
-            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/hqdefault.jpg');">
-            <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
-             <p class="featured-desc"></p> 
-             <h2>A family finds themself in the middle of a political uprising after moving to Asia.</h2>
-            <button class="featured-button"><a href="0098786685423454/921599873738309309a8d9ad9f9w.html">Watch</a></button> 
-        </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">TRENDING</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <!-- <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest" alt="">
-                            <span class="movie-list-item-title"></span>
-                            <p class="movie-list-item-desc"></p>
-                            <button class="movie-list-item-button"><a href="098786685423454/1002j3iow2424204024221.html">watch</a>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/terrifier.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Terrifier
+                            </div>
+                            <!-- <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div> -->
+                            <div class="item-content-description top-down delay-4">
+                                A maniac clown goes after two friends and who ever gets in his way, in this slasher film.
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <a href="098786685423454/324ko2khh2_53523.html"><button class="button">Watch</button></a>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/middlemen060328.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Middlemen
+                            </div>
+                            <!-- <div class="movie-infos top-down delay-2">
+                                <div class="movie-info">
+                                    <i class="bx bxs-star"></i>
+                                    <span>9.5</span>
+                                </div>
+                                <div class="movie-info">
+                                    <i class="bx bxs-time"></i>
+                                    <span>120 mins</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>HD</span>
+                                </div>
+                                <div class="movie-info">
+                                    <span>16+</span>
+                                </div>
+                            </div> -->
+                            <div class="item-content-description top-down delay-4">
                                
-                            </button>
-                        </div> -->
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/lostcolony.jpg" alt="">
-                            <span class="movie-list-item-title">Lost Colony</span>
-                            <p class="movie-list-item-desc">English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina. </p>
-                            <button class="movie-list-item-button"><a href="0098786685423454/21599873738309309a8d9ad9f9w.html">
-                                Watch
+                            </div>
+                            <div class="item-action top-down delay-6">
+                                <!-- <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch</span>
+                                </a> -->
+                                <a href="098786685423454/753220m4ms8s8swk4.html"><button class="button">Watch</button></a>
                             </a>
-                            </button>
+                            </div>
                         </div>
-                        <!-- <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/terrifier.jpg" alt="">
-                            <span class="movie-list-item-title">Terrifier</span>
-                            <p class="movie-list-item-desc">A maniac clown goes after two friends and who ever gets in his way, in this slasher film.</p>
-                                <button class="movie-list-item-button"><a href="098786685423454/324ko2khh2_53523.html">
-                                    Watch
-                                </a>
-                                </button>
-                        </div> -->
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/hmask.jpg" alt="">
-                            <span class="movie-list-item-title">Holloween</span>
-                            <p class="movie-list-item-desc">Holloween 1978. Standard Definition.</p>
-                                <button class="movie-list-item-button"><a href="0098786685423454/1021599873738309309a8d9ad9f9w.html">
-                                    Watch
-                                </a>
-                                </button>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+            </div>
+        </div>
+        <!-- END HERO SLIDE -->
+        <!-- TOP MOVIES SLIDE -->
+        <div class="top-movies-slide">
+            <div class="owl-carousel" id="top-movies-slide">
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <img src="img2/terminal.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Terminal
+                        <!-- </div>                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
                         </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/solar impact.jpg" alt="">
-                            <span class="movie-list-item-title">Solar Debris</span>
-                            <p class="movie-list-item-desc">When solar debris rains down upon Earth, it sparks catastrophic destruction across the planet.</p>
-                                <button class="movie-list-item-button"><a href="098786685423454/5328787318791830_3215fsdgg_df2334.html">
-                                    Watch
-                                </a>
-                                </button>
+                    </div>
+                </div>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <img src="img2/acrimony0101.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Acrimony
                         </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/mscndct.jpg" alt="">
-                            <span class="movie-list-item-title">Misconduct</span>
-                            <p class="movie-list-item-desc">An ambitious lawyer takes on a case against an Executive of a pharmaceutical company </p>
-                                <button class="movie-list-item-button"><a href="098786685423454/63523059igwdwe33j4523_3362.html">
-                                    Watch
-                                </a>
-                                </button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/ootf.jpg" alt="">
-                            <span class="movie-list-item-title">Out of furnace</span>
-                            <p class="movie-list-item-desc">When Rodney disapears after associating with a crime ring. Russel (Christian Bale), Rodney's brother takes matters into his own hands to find the truth behind his brother's disappearance.</p>
-                                <button class="movie-list-item-button"><a href="0098786685423454/821599873738309309a8d9ad9f9w.html">
-                                    Watch
-                                </a>
-                                </button>
-                        </div>
-                        <!-- <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/fistoflegend.jpg" alt="">
-                            <span class="movie-list-item-title">Fist Of Legend</span>
-                            <p class="movie-list-item-desc">Prepare for an epic clash between Chinese Kung Fu and Japanese Samurai as Chen Zhen takes up arms to safeguard China's honor.</p>
-                                <button class="movie-list-item-button"><a href="098786685423454/753220m4ms8s8swk4.html">
-                                    Watch
-                                </a>
-                                </button>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
                         </div> -->
                     </div>
-                    <i class="fas fa-chevron-right arrow"></i>
                 </div>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <img src="img2/jeeperscreepers20101.jpg"">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Jeepers Creepers
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <img src="img2/thespirit.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The spirit
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <img src="img2/hellnight.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Hell night
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <div class="movie-item">
+                    <img src="img2/seya-3363518606.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Anime series
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- END MOVIE ITEM -->
             </div>
-            
-            <!-- <div class="featured-content3xx"
-            style="background: linear-gradient(to bottom, rgba(0,0,0,0.1), #151515), url('img/filelatest/lostcolony.jpg');">
-             <img class="featured-title" src="img/3208d923t.jpg" alt="">
-             <p class="featured-desc">Lost Colony 1500s</p> 
-             <h2>English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina.</h2>
-            <button class="featured-button"><a href="0098786685423454/21599873738309309a8d9ad9f9w.html">Watch</a></button> 
-        </div> -->
+        </div>
+        <!-- END TOP MOVIES SLIDE -->
+    </div>
+    <!-- END HERO SECTION -->
+
+    <!-- LATEST MOVIES SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                latest movies
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/carrie0101.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Carrie
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/dinnerwithfriends0101.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Dinner with friends
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/idol0101.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Idol
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/ingrid.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ingrid goes west
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/rogue.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Rogue
+                        </div>
+                        <!-- <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="imgcartoons/04846850776.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Marvel Anime
+                        </div>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <!-- <a href="#" class="movie-item"> -->
+                    <!-- <img src="" alt=""> -->
+                    <!-- <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
         </div>
     </div>
-    <!-- <div class="content-container">
-        <div class="featured-content2"
-        style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/filelatest/251920-576965.jpg');">
-        <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
-         <!-- <p class="featured-desc"></p> 
-         <h2> </h2> -->
-        <!-- <button class="featured-button"><a href="file2/1098004c9c8c7me9ec99e99e000e739387.html">Watch Preview</a></button>  
-    </div> -->
-             <!-- <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/1733986.jpg" alt="">
-                            <span class="movie-list-item-title">Lost Colony 1500s</span>
-                            <p class="movie-list-item-desc">English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina.</p>
-                            <button class="movie-list-item-button"><a href="file2/21599873738309309a8d9ad9f9w.html">Watch</a></button>
+    <!-- END LATEST MOVIES SECTION -->
+
+    <!-- LATEST SERIES SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                latest series
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/download.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            
                         </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/haywire.jpg" alt="">
-                            <span class="movie-list-item-title">Haywire</span>
-                            <p class="movie-list-item-desc"> In WW2 An American tank crew is given a risky mission to infiltrate Nazi treasures that is hidden in an abandoned castle.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/filelatest/eyytWOyGCMeDdEus7yJMqaa4i98.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
                         </div>
                     </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div> -->
-            <!-- <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/lastsentinal.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Last Sentinal
                         </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
                         </div>
                     </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/sometimeother.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Sometime other than now
+                        </div>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/rold.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Classic thriller
+                        </div>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/thepersksofawallflower.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           The perks of a wallflower
+                        </div>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/thelongestweek.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The longest week
+                        </div>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="img2/deathproof.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Deathproof
+                        </div>
+                        <div class="movie-infos">
+                            <!-- <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
             </div>
         </div>
-    </div>  -->
-
-    <!-- <div class="container">
-        <div class="content-container">
-
-            <div class="featured-content3"
-            style="background: linear-gradient(to right, rgba(0,0,0,0.2), #151515), url('img/filelatest/3208d923tr.jpg');">           
-            <div class="movie-list-item-C">
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/filelatest/ootf.jpg" alt="">
-                <span class="movie-list-item-title">Out of the furnace</span>
-                <p class="movie-list-item-desc">When Rodney disapears after associating with a crime ring. Russel (Christian Bale), Rodney's brother takes matters into his own hands to find the truth behind his brother's disappearance. </p>
-                    <button class="movie-list-item-button"><a href="0098786685423454/821599873738309309a8d9ad9f9w.html">
-                        Watch
-                    </a>
-                    </button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/filelatest/noescape.jpg" alt="">
-                <span class="movie-list-item-title">No Escape</span>
-                <p class="movie-list-item-desc">A family finds themself in the middle of a political uprising after moving to Asia.</p>
-                    <button class="movie-list-item-button"><a href="0098786685423454/921599873738309309a8d9ad9f9w.html">
-                        Watch
-                    </a>
-                    </button>
-            </div>
-            <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/filelatest/hmask.jpg" alt="">
-                <span class="movie-list-item-title">Holloween</span>
-                <p class="movie-list-item-desc">Holloween 1978. Standard Definition.</p>
-                    <button class="movie-list-item-button"><a href="0098786685423454/1021599873738309309a8d9ad9f9w.html">
-                        Watch
-                    </a>
-                    </button>
-            </div> -->
-            <!-- <div class="movie-list-item">
-                <img class="movie-list-item-img" src="img/filelatest/mscndct.jpg" alt="">
-                <span class="movie-list-item-title">Misconduct</span>
-                <p class="movie-list-item-desc">An ambitious Lawyer takes a case against an Executive of a pharmaceutical company</p>
-                    <button class="movie-list-item-button"><a href="0098786685423454/1121599873738309309a8d9ad9f9w.html">
-                        Watch
-                    </a>
-                    </button>
-            </div>
-        </div>  -->
     </div>
-    
-    <div class="featured-content3x"
-    style="background: linear-gradient(to bottom, rgba(0,0,0,0.6), #151515), url('img/filelatest/3208d923tr.jpg');">
-    <!-- <img class="featured-title" src="img/3208d923t.jpg" alt=""> -->
-     <p class="featured-descx">TMCTV.org</p> 
-     <!-- <h2>English colonists, Native Islanders and Supernatural Ghosts encounter one another in what is now known as North Carolina.</h2>
-    <button class="featured-button"><a href="file2/21599873738309309a8d9ad9f9w.html">Watch</a></button>  -->
-</div> 
+    <!-- END LATEST SERIES SECTION -->
 
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61571283972676" target="_blank">Follow us on Facebook</a>
-            <!-- <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a> -->
+    <!-- LATEST CARTOONS SECTION -->
+
+    <!-- SPECIAL MOVIE SECTION -->
+    <div class="section">
+        <div class="hero-slide-item">
+            <img src="img2/k0101.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                    <div class="item-content-title">
+                        Anime Series
+                    </div>
+                    <div class="movie-infos">
+                        <!-- <div class="movie-info">
+                            <i class="bx bxs-star"></i>
+                            <span>9.5</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class="bx bxs-time"></i>
+                            <span>120 mins</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>HD</span>
+                        </div>
+                        <div class="movie-info">
+                            <span>16+</span>
+                        </div> -->
+                    </div>
+                    <div class="item-content-description">
+                        Subsription content will be available soon!
+                    </div>
+                    <div class="item-action">
+                        <!-- <a href="#" class="btn btn-hover">
+                            <i class="bx bxs-right-arrow"></i>
+                            <span>Watch now</span>
+                        </a> -->
+                        <!-- <a href="index.html"><button class="button">Watch</button></a> -->
+                    </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 TMCTV.org. All rights reserved.</p>
-        <li class="menu-list-item"><a href="pages/privacy_23989aca0dg9028lal9vauc903094dsiea012_1391n43654n2m319210.html">Privacy Policy & Terms of Service</a></li>
-        <!-- <p>Contact us: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p> -->
-    </footer>
+    </div>
+    <!-- END SPECIAL MOVIE SECTION -->
+
+    <!-- PRICING SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="pricing">
+                <div class="pricing-header">
+                    TMC<span class="main-color">TV</span>
+                </div>
+                <div class="pricing-list">
+                    <div class="row">
+                        <div class="col-4 col-md-12 col-sm-12">
+                            <div class="pricing-box">
+                                <div class="pricing-box-header">
+                                    <div class="pricing-name">
+                                       Subscription Content
+                                    </div>
+                                    <div class="pricing-price">
+                                       
+                                    </div>
+                                </div>
+                                <div class="pricing-box-content">
+                                    <p></p>
+                                    <p></p>
+                                    <p><del></del></p>
+                                    <p><del></del></p>
+                                </div>
+                                <div class="pricing-box-action">
+                                    <!-- <a href="#" class="btn btn-hover">
+                                        <span>Register now</span>
+                                    </a> -->
+                                    <a href="index.html"><button class="button">Register here</button></a>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PRICING SECTION -->
+
+    <!-- FOOTER SECTION -->
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61571283972676" target="_blank">Follow us on Facebook</a>
+        <!-- <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a> -->
+    </div>
+    <p>&copy; 2025 TMCTV.org. All rights reserved.</p>
+    <li class="menu-list-item"><a href="pages/privacy_23989aca0dg9028lal9vauc903094dsiea012_1391n43654n2m319210.html">Privacy Policy & Terms of Service</a></li>
+    <!-- <p>Contact us: <a href="mailto:contact@yourcompany.com">contact@yourcompany.com</a></p> -->
+</footer>
 
 
+    <!-- END FOOTER SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
     <script src="app.js"></script>
-
-    <script>
-        function toggleMusic() {
-            var music = document.getElementById('background-music');
-            var playIcon = document.getElementById('play-icon');
-            var pauseIcon = document.getElementById('pause-icon');
-            var statusText = document.getElementById('music-status');
-
-            if (music.paused) {
-                music.play();
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'inline-block';
-                statusText.textContent = 'Pause Music';
-            } else {
-                music.pause();
-                playIcon.style.display = 'inline-block';
-                pauseIcon.style.display = 'none';
-                statusText.textContent = 'Play Music';
-            }
-        }
-    </script>
 
 </body>
 
