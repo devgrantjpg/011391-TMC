@@ -368,7 +368,7 @@ a.movie-item:hover {
     display: block;
     position: relative;
     overflow: hidden;
-    padding-top: 75%;
+    padding-top: 65%;
     cursor: pointer;
 }
 
