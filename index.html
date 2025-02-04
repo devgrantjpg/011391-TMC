@@ -1,831 +1,948 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>TMC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <!-- Owl Carousel css-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- Owl Carousel css-->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Streaming</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- i will provide this in description  -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/select2.min.css" />
+  <link rel="stylesheet" href="css/select2-bootstrap4.min.css" />
 
-
-  <!-- jquery css-->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <!-- jquery css-->
-
+  <link rel="stylesheet" href="css/slick-animation.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <section class="home">
-    <div class="headerbg ">
-      <header>
-        <div class="container ">
-          <div class="navbar flex1">
-            <div class="logo">
-              <!-- <img src="" alt=""> -->
-              TMC
-            </div>
+  <header id="main-header">
+    <div class="main-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+              <a href="#" class="navbar-toggler c-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-icon" data-toggle="collapse">
+                  <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                  <span class="navbar-menu-icon navbar-menu-icon--middle"></span>
+                  <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
+                </div>
+              </a>
+              <div>TMC</div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="menu-main-menu-container">
+                  <ul id="top-menu" class="navbar-nav ml-auto">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">Movies</a></li>
+                    <li class="menu-item"><a href="#">Series</a></li>
+                    <li class="menu-item">
+                      <a href="#">Genres</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="#">Anime</a></li>
+                        <li class="menu-item"><a href="#">Thriller</a></li>
+                        <li class="menu-item"><a href="#">Comedy</a></li>
+                        <!-- <li class="menu-item">
+                          <a href="#">Privacy-Policy</a>
+                        </li> -->
+                        <!-- <li class="menu-item">
+                          <a href="#">Pricing</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item">
+                              <a href="#">Gold Membership</a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="#">Silver Membership</a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="#">Bronze Membership</a>
+                            </li>
+                          </ul>
+                        </li> -->
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="mobile-more-menu">
+                <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton" data-toggle="more-toggle"
+                  aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-ellipsis-h"></i>
+                </a>
+                <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="navbar-right position-relative">
+                    <ul class="d-flex align-items-center justify-content-end list-inline m-0">
+                      <li>
+                        <a href="#" class="search-toggle">
+                          <i class="fa fa-search"></i>
+                        </a>
+                        <div class="search-box iq-search-bar">
+                          <form action="#" class="searchbox">
+                            <div class="form-group position-relative">
+                              <input type="text" class="text search-input font-size-12"
+                                placeholder="type here to search..." />
+                              <i class="search-link fa fa-search"></i>
+                            </div>
+                          </form>
+                        </div>
+                      </li>
+                      <li class="nav-item nav-icon">
+                        <a href="#" class="search-toggle position-relative">
+                          <i class="fa fa-bell"></i>
+                          <span class="bg-danger dots"></span>
+                        </a>
+                        <div class="iq-sub-dropdown">
+                          <div class="iq-card shadow-none m-0">
+                            <div class="iq-card-body">
+                              <a href="#" class="iq-sub-card">
+                                <div class="media align-items-center">
+                                  <img src="images/notify/thumb-1.jpg" alt="" class="img-fluid mr-3" />
+                                  <div class="media-body">
+                                    <h6 class="mb-0">Captain Marvel</h6>
+                                    <small class="font-size-12">just now</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card">
+                                <div class="media align-items-center">
+                                  <img src="images/notify/thumb-2.jpg" alt="" class="img-fluid mr-3" />
+                                  <div class="media-body">
+                                    <h6 class="mb-0">
+                                      Dora and The Lost City of Gold
+                                    </h6>
+                                    <small class="font-size-12">25 mins ago</small>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card">
+                                <div class="media align-items-center">
+                                  <img src="images/notify/thumb-3.jpg" alt="" class="img-fluid mr-3" />
+                                  <div class="media-body">
+                                    <h6 class="mb-0">Mulan</h6>
+                                    <small class="font-size-12">1h 30 mins ago</small>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li> -->
+                      <!-- <li>
+                        <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                          <img src="images/user/user.png" class="img-fluid user-m rounded-circle" alt="" />
+                        </a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                          <div class="iq-card shadow-none m-0">
+                            <div class="iq-card-body p-0 pl-3 pr-3">
+                              <a href="#" class="iq-sub-card setting-dropdown">
+                                <div class="media align-items-center">
+                                  <div class="right-icon">
+                                    <i class="fa fa-user text-primary"></i>
+                                  </div>
+                                  <div class="media-body ml-3">
+                                    <h6 class="mb-0">Manage Profile</h6>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card setting-dropdown">
+                                <div class="media align-items-center">
+                                  <div class="right-icon">
+                                    <i class="fa fa-cog text-primary"></i>
+                                  </div>
+                                  <div class="media-body ml-3">
+                                    <h6 class="mb-0">Settings</h6>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card setting-dropdown">
+                                <div class="media align-items-center">
+                                  <div class="right-icon">
+                                    <i class="fa fa-inr text-primary"></i>
+                                  </div>
+                                  <div class="media-body ml-3">
+                                    <h6 class="mb-0">Pricing Plan</h6>
+                                  </div>
+                                </div>
+                              </a>
+                              <a href="#" class="iq-sub-card setting-dropdown">
+                                <div class="media align-items-center">
+                                  <div class="right-icon">
+                                    <i class="fa fa-sign-out text-primary"></i>
+                                  </div>
+                                  <div class="media-body ml-3">
+                                    <h6 class="mb-0">Logout</h6>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-            <nav>
-              <ul id="menuitem">
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="product.html">Movies</a></li>
-                <li><a href="index.html">Tv Shows</a></li>
-                <li><a href="contact.html">Video</a></li> -->
-                <li><a href="index.html">Account</a></li>
-              </ul>
+              <div class="navbar-right menu-right">
+                <!-- <ul class="d-flex align-items-center list-inline m-0">
+                  <li class="nav-item nav-icon">
+                    <a href="#" class="search-toggle device-search">
+                      <i class="fa fa-search"></i>
+                    </a>
+                    <div class="search-box iq-search-bar d-search">
+                      <form action="#" class="searchbox">
+                        <div class="form-group position-relative">
+                          <input type="text" class="text search-input font-size-12"
+                            placeholder="type here to search..." />
+                          <i class="search-link fa fa-search"></i>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="nav-item nav-icon">
+                    <a href="#" class="search-toggle" data-toggle="search-toggle">
+                      <i class="fa fa-bell"></i>
+                      <span class="bg-danger dots"></span>
+                    </a>
+                    <div class="iq-sub-dropdown">
+                      <div class="iq-card shadow-none m-0">
+                        <div class="iq-card-body">
+                          <a href="#" class="iq-sub-card">
+                            <div class="media align-items-center">
+                              <img src="images/notify/thumb-1.jpg" alt="" class="img-fluid mr-3" />
+                              <div class="media-body">
+                                <h6 class="mb-0">Captain Marvel</h6>
+                                <small class="font-size-12">just now</small>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card">
+                            <div class="media align-items-center">
+                              <img src="images/notify/thumb-2.jpg" alt="" class="img-fluid mr-3" />
+                              <div class="media-body">
+                                <h6 class="mb-0">
+                                  Dora and The Lost City of Gold
+                                </h6>
+                                <small class="font-size-12">25 mins ago</small>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card">
+                            <div class="media align-items-center">
+                              <img src="images/notify/thumb-3.jpg" alt="" class="img-fluid mr-3" />
+                              <div class="media-body">
+                                <h6 class="mb-0">Mulan</h6>
+                                <small class="font-size-12">1h 30 mins ago</small>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item nav-icon">
+                    <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center p-0">
+                      <img src="images/user/user.png" class="img-fluid user-m rounded-circle" alt="" />
+                    </a>
+                    <div class="iq-sub-dropdown iq-user-dropdown">
+                      <div class="iq-card shadow-none m-0">
+                        <div class="iq-card-body p-0 pl-3 pr-3">
+                          <a href="#" class="iq-sub-card setting-dropdown">
+                            <div class="media align-items-center">
+                              <div class="right-icon">
+                                <i class="fa fa-user text-primary"></i>
+                              </div>
+                              <div class="media-body ml-3">
+                                <h6 class="mb-0">Manage Profile</h6>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card setting-dropdown">
+                            <div class="media align-items-center">
+                              <div class="right-icon">
+                                <i class="fa fa-cog text-primary"></i>
+                              </div>
+                              <div class="media-body ml-3">
+                                <h6 class="mb-0">Settings</h6>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card setting-dropdown">
+                            <div class="media align-items-center">
+                              <div class="right-icon">
+                                <i class="fa fa-inr text-primary"></i>
+                              </div>
+                              <div class="media-body ml-3">
+                                <h6 class="mb-0">Pricing Plan</h6>
+                              </div>
+                            </div>
+                          </a>
+                          <a href="#" class="iq-sub-card setting-dropdown">
+                            <div class="media align-items-center">
+                              <div class="right-icon">
+                                <i class="fa fa-sign-out text-primary"></i>
+                              </div>
+                              <div class="media-body ml-3">
+                                <h6 class="mb-0">Logout</h6>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul> -->
+              </div>
             </nav>
-            <span class="fa fa-bars" onclick="menutoggle()"></span>
-
-            <div class="subscribe flex">
-              <i class="fas fa-search"></i>
-              <i id="palybtn" class="fas fa-user"></i>
-              <button>SUBSCRIBE</button>
-            </div>
+            <div class="nav-overlay"></div>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
 
-      <div class="home_content mtop">
-        <div class="container">
-          <div class="left">
-            <h1>Train to Busan</h1>
-
-            <div class="time flex">
-              <label>R</label>
-              <!-- <i class="fas fa-circle"></i>
-              <span></span>
-              <i class="fas fa-circle"></i>
-              <p></p>
-              <i class="fas fa-circle"></i> -->
-             
-            </div>
-
-            <p>When a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan.
-            </p>
-            <a href="/098786685423454/11118786685423454.html">
-              <div class="button flex">
-                <button class="btn">Watch</button>
-                <!-- <i id="palybtn" class="fas fa-play"></i> -->
-                <p></p>
+  <!-- slider starts  -->
+  <section id="home" class="iq-main-slider p-0">
+    <div id="home-slider" class="slider m-0 p-0">
+      <div class="slide slick-bg s-bg-1">
+        <div class="container-fluid position-relative h-100">
+          <div class="slider-inner h-100">
+            <div class="row align-items-center h--100">
+              <div class="col-xl-6 col-lg-12 col-md-12">
+                <a href="javascript:void(0)">
+                  <div class="channel-logo" data-animation-in="fadeInLeft" data-delay-in="0.5">
+                    Train to busan
+                  </div>
+                </a>
+                <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6">
+                  
+                </h1>
+                <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft"
+                  style="opacity: 1">
+                  <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                    <!-- <ul
+                      class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star-half"></i></li>
+                    </ul> -->
+                    <span class="text-white ml-2"></span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                    <span class="badge badge-secondary p-2"></span>
+                    <!-- <span class="ml-3">1h 42min</span> -->
+                  </div>
+                </div>
+                <p data-animation-in="fadeInUp">
+                  While a zombie virus breaks out in South Korea, passengers struggle to survive on the train from Seoul to Busan.
+                <!-- <div class="trending-list" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <div class="text-primary title starring">
+                    Starring :
+                    <span class="text-body">Kristan Bell, Idina menzel, Jonathan Groff</span>
+                  </div>
+                  <div class="text-primary title genres">
+                    Genres : <span class="text-body">Animation</span>
+                  </div>
+                  <div class="text-primary title tag">
+                    Tags :
+                    <span class="text-body">Animation, Adventure, Comedy</span>
+                  </div>
+                </div> -->
+                <div class="d-flex align-items-center r-mb-23 mt-4" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <a href="/011391-TMC/00098786685423454/100098786685423454.html" class="btn btn-hover iq-button"><i class="fa fa-play mr-3"></i>Watch</a>
+                  <!-- <a href="#" class="btn btn-link">More Details</a> -->
+                </div>
               </div>
-            </a>
+            </div>
+            <!-- <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+              <a href="video/trailer.mp4" class="video-open playbtn">
+                <img src="images/play.png" class="play" alt="" />
+                <span class="w-trailor">Watch</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="slide slick-bg s-bg-2">
+        <div class="container-fluid position-relative h-100">
+          <div class="slider-inner h-100">
+            <div class="row align-items-center h--100">
+              <div class="col-xl-6 col-lg-12 col-md-12">
+                <a href="javascript:void(0)">
+                  <div class="channel-logo" data-animation-in="fadeInLeft" data-delay-in="0.5">
+                    Texas Chainsaw
+                  </div>
+                </a>
+                <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6">
+                  
+                </h1>
+                <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft"
+                  style="opacity: 1">
+                  <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                    <!-- <ul
+                      class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star-half"></i></li>
+                    </ul> -->
+                    <span class="text-white ml-2"></span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                    <span class="badge badge-secondary p-2"></span>
+                    <!-- <span class="ml-3">1h 42min</span> -->
+                  </div>
+                </div>
+                <p data-animation-in="fadeInUp">
+                While a Woman takes a group of friends on a trip to receive her inheritance, they encounter a chainsaw
+                weilding Mainiac.
+                <!-- <div class="trending-list" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <div class="text-primary title starring">
+                    Starring :
+                    <span class="text-body">Kristan Bell, Idina menzel, Jonathan Groff</span>
+                  </div>
+                  <div class="text-primary title genres">
+                    Genres : <span class="text-body">Animation</span>
+                  </div>
+                  <div class="text-primary title tag">
+                    Tags :
+                    <span class="text-body">Animation, Adventure, Comedy</span>
+                  </div>
+                </div> -->
+                <div class="d-flex align-items-center r-mb-23 mt-4" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <a href="/011391-TMC/00098786685423454/140098786685423454.html" class="btn btn-hover iq-button"><i class="fa fa-play mr-3"></i>Watch</a>
+                  <!-- <a href="#" class="btn btn-link">More Details</a> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+              <a href="video/trailer.mp4" class="video-open playbtn">
+                <img src="images/play.png" class="play" alt="" />
+                <span class="w-trailor">Watch</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="slide slick-bg s-bg-3">
+        <div class="container-fluid position-relative h-100">
+          <div class="slider-inner h-100">
+            <div class="row align-items-center h--100">
+              <div class="col-xl-6 col-lg-12 col-md-12">
+                <a href="javascript:void(0)">
+                  <div class="channel-logo" data-animation-in="fadeInLeft" data-delay-in="0.5">
+                    Little mermaid
+                  </div>
+                </a>
+                <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6">
+                  
+                </h1>
+                <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft"
+                  style="opacity: 1">
+                  <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                    <!-- <ul
+                      class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star-half"></i></li> -->
+                    </ul>
+                    <span class="text-white ml-2"></span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                    <span class="badge badge-secondary p-2"></span>
+                    <!-- <span class="ml-3">1h 52min</span> -->
+                  </div>
+                </div>
+                <p data-animation-in="fadeInUp">
+                 Co Created by Disney. A tribute to the little mermaid, A mermaid princess makes a bargain with a sea witch to become human. On land, the princess discovers just how much she loves the surface world and must decide how much she is willing to sacrifice to stay there.
+                </p>
+                <!-- <div class="trending-list" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <div class="text-primary title starring">
+                    Starring :
+                    <span class="text-body">Patrick Wilson, Vera Farminga, Ron Livingston</span>
+                  </div>
+                  <div class="text-primary title genres">
+                    Genres : <span class="text-body">Horror</span>
+                  </div>
+                  <div class="text-primary title tag">
+                    Tags :
+                    <span class="text-body">Horror, Mystery, Thriller</span>
+                  </div>
+                </div> -->
+                <div class="d-flex align-items-center r-mb-23 mt-4" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <a href="#" class="btn btn-hover iq-button"><i class="fa fa-play mr-3"></i>Play Now</a>
+                  <!-- <a href="#" class="btn btn-link">More Details</a> -->
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+              <a href="video/trailer.mp4" class="video-open playbtn">
+                <img src="images/play.png" class="play" alt="" />
+                <span class="w-trailor">Watch Trailer</span>
+              </a>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- slider ends -->
 
+  <!-- main content starts  -->
+  <div class="main-content">
+    <!-- favorite section starts   -->
 
-  <script>
-    var menuitem = document.getElementById("menuitem");
-    menuitem.style.maxHeight = "0px";
-
-    function menutoggle() {
-      if (menuitem.style.maxHeight == '0px') {
-        menuitem.style.maxHeight = "200px"
-      } else {
-        menuitem.style.maxHeight = "0px"
-      }
-    }
-
-    window.addEventListener("scroll", function() {
-      var header = document.querySelector("header");
-      header.classList.toggle("sticky", window.scrollY > 50);
-    })
-  </script>
-
-
-
-  <section class="popular mtop">
-    <div class="container ">
-      <div class="heading flex1">
-        <h2>Most Popular</h2>
-        <button>MORE VIDEO</button>
-      </div>
-
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/traintobusan.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
+    <section id="iq-favorites">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 overflow-hidden">
+            <div class="iq-main-header d-flex align-items-center justify-content-between">
+              <h4 class="main-title">Top Picks For You</h4>
+              <a href="#" class="iq-view-all">View All</a>
             </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Train to Busan</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/strangers.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Strangers</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Thriller</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/texasc.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Texas Chainsaw</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Thriller</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/fistoffury.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Fist of Fury</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/escape room.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Escape room</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Thriller</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/rold.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Retrun of the living dead</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Thriller</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/balletshoes.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Ballet Shoes</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="popular mtop">
-    <div class="container ">
-      <div class="heading flex1">
-        <h2>Most Viewed</h2>
-        <button>MORE VIDEO</button>
-      </div>
-
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/balletshoes.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Ballet Shoes</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Cartoons</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/ingrid0101.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Ingrid goes west</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Comedy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/halloweenmask.jpg">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Halloween</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Thriller</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/carrie0101.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Carrie</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Thriller</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="img/ftheprom.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>F the Prom</h3>
-              <div class="time flex">
-                <!-- <span>1hrs 50mins</span> -->
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Owl Carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-  <!-- Owl Carousel -->
-
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      dots: false,
-      responsive: {
-        411: {
-          items: 1
-        },
-        768: {
-          items: 2
-        },
-        1000: {
-          items: 4
-        }
-      }
-    })
-  </script>
-
-  <!-- <section class="new_realase top">
-    <div class="container">
-      <div class="owl-carousel owl-carousel2 owl-theme">
-        <div class="items">
-          <div class="left">
-            <div class="img">
-              <img src="image/p4.jpg" alt="">
-            </div>
-            <div class="heading">
-              <h2> <span></span>Featured</h2>
-              <h1>Sea level</h1>
-            </div>
-            <div class="time flex">
-              <label>R</label>
-              <i class="fas fa-circle"></i>
-               <span>1hrs 50mins</span> 
-              <i class="fas fa-circle"></i>
-              <a class="flex1"><img src="img/sealevel.jpg" /> 8.5</a>
-              <i class="fas fa-circle"></i>
-              <p></p>
-              <i class="fas fa-circle"></i>
-              <button>Cartoons</button>
-            </div>
-
-            <p>Pup discovers human poachers stealing eggs from his reef. As he leaves the sea to rescue the eggs he'll enter the dangerous world of humans.
-            </p>
-
-            <div class="button flex">
-              <button class="btn">PLAY NOW</button>
-              <i id="palybtn" class="fas fa-play"></i>
-              <p>WATCH TRAILER</p>
-            </div>
-          </div>
-        </div>
-        <div class="items">
-          <div class="left">
-            <div class="img">
-              <img src="image/p5.jpg" alt="">
-            </div>
-            <div class="heading">
-              <h2> <span></span> NEW REALEASE</h2>
-              <h1>THE HORSE LADY </h1>
-            </div>
-            <div class="time flex">
-              <label>R</label>
-              <i class="fas fa-circle"></i>
-              <span>1hrs 50mins</span>
-              <i class="fas fa-circle"></i>
-              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
-              <i class="fas fa-circle"></i>
-              <i class="fas fa-circle"></i>
-              <p>2021</p>
-              <i class="fas fa-circle"></i>
-              <button>Action</button>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="button flex">
-              <button class="btn">PLAY NOW</button>
-              <i id="palybtn" class="fas fa-play"></i>
-              <p>WATCH TRAILER</p>
-            </div>
-          </div>
-        </div>
-        <div class="items">
-          <div class="left">
-            <div class="img">
-              <img src="image/p6.jpg" alt="">
-            </div>
-            <div class="heading">
-              <h2> <span></span> NEW REALEASE</h2>
-              <h1>ship of full moon </h1>
-            </div>
-            <div class="time flex">
-              <label>R</label>
-              <i class="fas fa-circle"></i>
-              <span>1hrs 50mins</span>
-              <i class="fas fa-circle"></i>
-              <a class="flex1"><img src="" /> 8.5</a>
-              <i class="fas fa-circle"></i>
-              <p>2021</p>
-              <i class="fas fa-circle"></i>
-              <button>Action</button>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="button flex">
-              <button class="btn">PLAY NOW</button>
-              <i id="palybtn" class="fas fa-play"></i>
-              <p>WATCH TRAILER</p>
-            </div>
-          </div>
-        </div>
-        <div class="items">
-          <div class="left">
-            <div class="img">
-              <img src="image/p7.jpg" alt="">
-            </div>
-            <div class="heading">
-              <h2> <span></span></h2>
-              <h1></h1>
-            </div>
-            <div class="time flex">
-              <label>R</label>
-              <i class="fas fa-circle"></i>
-              <span></span>
-              <i class="fas fa-circle"></i>
-              <a class="flex"><img src="" /> 8.5</a>
-              <i class="fas fa-circle"></i>
-             
-              <i class="fas fa-circle"></i>
-              <button>Action</button>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="button flex">
-              <button class="btn">PLAY NOW</button>
-              <i id="palybtn" class="fas fa-play"></i>
-              <p>WATCH TRAILER</p>
-            </div>
-          </div>
-        </div>
-        <div class="items">
-          <div class="left">
-            <div class="img">
-              <img src="image/p2.jpg" alt="">
-            </div>
-            <div class="heading">
-              <h2> <span></span> NEW REALEASE</h2>
-              <h1>THE WARRIOR LIFE</h1>
-            </div>
-            <div class="time flex">
-              <label>R</label>
-              <i class="fas fa-circle"></i>
-              <span>1hrs 50mins</span>
-              <i class="fas fa-circle"></i>
-              <a class="flex1"><img src="" /> 8.5</a>
-              <i class="fas fa-circle"></i>
-             
-              <i class="fas fa-circle"></i>
-              <button>Action</button>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="button flex">
-              <button class="btn">PLAY NOW</button>
-              <i id="palybtn" class="fas fa-play"></i>
-              <p>WATCH TRAILER</p>
+            <div class="favorite-contens">
+              <ul class="favorites-slider list-inline row p-0 mb-0">
+                <!-- slide item 1 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/jet.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="/011391-TMC/00098786685423454/20098786685423454.html"> Fist of Legend </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <div class="badge badge-secondary p-1 mr-2"></div>
+                        <!-- <span class="text-white">1h 43min</span> -->
+                      </div>
+                     
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 2 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/brucelee.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="/011391-TMC/0098786685423454/21599873738309309a8d9ad9f9w.html"> Fist of Fury </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <div class="badge badge-secondary p-1 mr-2"></div>
+                        <!-- <span class="text-white">2h 34min</span> -->
+                      </div>
+            
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <!-- <span class="count-box">58+</span> -->
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 3 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/sightless.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#"> Sightless </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <div class="badge badge-secondary p-1 mr-2"></div>
+                        <!-- <span class="text-white">2h 57min</span> -->
+                      </div>
+                      <!-- <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 4 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/theresort1957759.webp" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="/011391-TMC/0098786685423454/41599873738309309a8d9ad9f9w.html"> The Resort </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <div class="badge badge-secondary p-1 mr-2"></div>
+                        <!-- <span class="text-white">2h 23min</span> -->
+                      </div>
+                      <!-- <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 5 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/photo.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="/011391-TMC/0098786685423454/71599873738309309a8d9ad9f9w.html"> Sea Level </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <!-- <div class="badge badge-secondary p-1 mr-2"></div>
+                        <span class="text-white">1h 55min</span> -->
+                      <!-- </div>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/rold0258573.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">  </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <!-- <div class="badge badge-secondary p-1 mr-2"></div>
+                        <span class="text-white">1h 55min</span> -->
+                      </div>
+                      <!-- <div class="hover-buttons">
+                         <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/f the prom.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="/011391-TMC/0098786685423454/1321599873738309309a8d9ad9f9w.html"> F the Prom </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <!-- <div class="badge badge-secondary p-1 mr-2"></div>
+                        <span class="text-white">1h 55min</span> -->
+                      </div>
+                      <!-- <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="imgs/360762.webp" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#"> Ballet Shoes </a>
+                      </h6>
+                      <div class="movie-time d-flex align-items-center my-2">
+                        <!-- <div class="badge badge-secondary p-1 mr-2"></div>
+                        <span class="text-white">1h 55min</span> -->
+                      </div>
+                      <!-- <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div> -->
+                    </div>
+                    <div class="block-social-info">
+                      <ul class="list-inline p-0 m-0 music-play-lists">
+                        <li class="share">
+                          <span><i class="fa fa-share-alt"></i></span>
+                          <div class="share-box">
+                            <div class="d-flex align-items-center">
+                              <a href="#" class="share-ico"><i class="fa fa-share-alt"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-youtube"></i></a>
+                              <a href="#" class="share-ico"><i class="fa fa-instagram"></i></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-heart"></i></span>
+                          <span class="count-box"></span>
+                        </li>
+                        <li>
+                          <span><i class="fa fa-plus"></i></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section> -->
+    </section>   
+  </div>
 
-  <script>
-    $('.owl-carousel2').owlCarousel({
-      loop: true,
-      margin: 20,
-      dots: true,
-      items: 1
-    })
-  </script>
+  <!-- main content ends  -->
 
 
-
-  <!-- <section class="popular mtop">
-    <div class="container ">
-      <div class="heading flex1">
-        <h2>Powerful Crime Thrillers</h2>
-        <button>MORE VIDEO</button>
-      </div>
-
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="image/p7.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
+  <footer class="iq-bg-dark">
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row footer-standard">
+          <div class="col-lg-5">
+            <div class="widget text-left">
+              <div>
+                <ul class="menu p-0">
+                  <li><a href="#">Terms and Privacy Policy</a></li>
+                  <li><a href="#"></a></li>
+                  <!-- <li><a href="#">FAQ</a></li> -->
+                  <!-- <li><a href="#">Watch List</a></li> -->
+                </ul>
               </div>
             </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>My Generation</h3>
-              <div class="time flex">
-                <span>1hrs 50mins</span>
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
+            <div class="widget text-left">
+              <div class="textwidget">
+                <p><small> TMCTV.org (c) 2025 All Rights Reserved |.</small></p> 
               </div>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="image/p6.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Machine War</h3>
-              <div class="time flex">
-                <span>1hrs 50mins</span>
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <h6 class="footer-link-title">
+              Follow Us on Facebook:
+            </h6>
+            <ul class="info-share">
+              <li>
+                <a href="https://www.facebook.com/people/TMCTVorg/61571283972676/">
+                  <i>
+                  <fa class="fa fa-facebook"></fa>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="#">
+                  <i>
+                  <fa class="fa fa-youtube"></fa>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i>
+                  <fa class="fa fa-instagram"></fa>
+                </a>
+              </li> -->
+            </ul>
           </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="image/p5.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Fight for Life</h3>
-              <div class="time flex">
-                <span>1hrs 50mins</span>
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="image/p4.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>The Warrior Life</h3>
-              <div class="time flex">
-                <span>1hrs 50mins</span>
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box">
-            <div class="imgBox">
-              <img src="image/p3.jpg" alt="">
-              <div class="icon">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-share-alt"></i>
-                <i class="fas fa-plus"></i>
-              </div>
-            </div>
-
-            <div class="content">
-              <i id="palybtn" class="fas fa-play"></i>
-            </div>
-            <div class="text">
-              <h3>Skull Of Myths </h3>
-              <div class="time flex">
-                <span>1hrs 50mins</span>
-                <i class="fas fa-circle"></i>
-                <a>Action</a>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="widget text-left">
+              <div class="textwidget">
+                <h6 class="footer-link-title">
+                  
+                </h6>
+                <div class="d-flex align-items-center">
+                  <a href="#"><img src="images/footer/01.jpg" alt=""></a>
+                  <br>
+                  <a href="#" class="ml-3"><img src="images/footer/02.jpg" alt=""></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-
-
-  <!-- paxi mate ko lai aata hai-->
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      dots: false,
-      responsive: {
-        414: {
-          items: 1
-        },
-        600: {
-          items: 2
-        },
-        1000: {
-          items: 4
-        }
-      }
-    })
-  </script>
-
-
-
-  <footer>
-    <div class="container mtop">
-      <div class="box">
-        <div class="logo">
-          TMCTV
-        </div>
-        <p></p>
-        <div class="icon">
-          <a href="https://www.facebook.com/people/TMCTVorg/61571283972676/"><i class="fab fa-facebook-square"></i></a>
-        </div>
-      </div>
-
-      <!-- <div class="box">
-        <h2>Explore</h2>
-        <div class="flex">
-          <ul>
-            <li>Home</li>
-            <li>Tv Shows</li>
-            <li>Actors</li>
-            <li>Celebrity</li>
-          </ul>
-          <ul class="ul">
-            <li>Movie</li>
-            <li>Video</li>
-            <li>Basketball</li>
-            <li>Coress</li>
-          </ul>
-        </div>
-      </div> -->
-
-      <div class="box ">
-        <h2>Company</h2>
-        <div class="flex">
-          <ul>
-            <!-- <li></li> -->
-
-          </ul>
-          <ul class="ul">
-            <a href="/pages/policy"><li>Privacy Policy</li></a>
-            <a href="https://www.facebook.com/people/TMCTVorg/61571283972676/"><li>Follow us on Facebook</li></a>
-            <!-- <li></li>
-            <li></li> -->
-          </ul>
-        </div>
-      </div>
-
-      <div class="box">
-        <h2></h2>
-        <p></p>
-        <!-- <div class="img flex1">
-          <img src="image/app1.png" alt="">
-          <img src="image/app2.png" alt="">
-        </div> -->
-      </div>
-    </div>
-    <p class="legal">Copyrights (c) 2025 Copyrights All Rights Reserved | </p>
   </footer>
+
+  <!-- js files  -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick-animation.min.js"></script>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
