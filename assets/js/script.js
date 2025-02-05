@@ -1,52 +1,88 @@
 'use strict';
-// Copyright 2024 @krypto-etox
-/**
- * navbar variables
- */
 
-const navOpenBtn = document.querySelector("[data-menu-open-btn]");
-const navCloseBtn = document.querySelector("[data-menu-close-btn]");
-const navbar = document.querySelector("[data-navbar]");
-const overlay = document.querySelector("[data-overlay]");
+// modal variables
+const modal = document.querySelector('[data-modal]');
+const modalCloseBtn = document.querySelector('[data-modal-close]');
+const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 
-const navElemArr = [navOpenBtn, navCloseBtn, overlay];
+// modal function
+const modalCloseFunc = function () { modal.classList.add('closed') }
 
-for (let i = 0; i < navElemArr.length; i++) {
+// modal eventListener
+modalCloseOverlay.addEventListener('click', modalCloseFunc);
+modalCloseBtn.addEventListener('click', modalCloseFunc);
 
-  navElemArr[i].addEventListener("click", function () {
 
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-    document.body.classList.toggle("active");
 
+
+
+// notification toast variables
+const notificationToast = document.querySelector('[data-toast]');
+const toastCloseBtn = document.querySelector('[data-toast-close]');
+
+// notification toast eventListener
+toastCloseBtn.addEventListener('click', function () {
+  notificationToast.classList.add('closed');
+});
+
+
+
+
+
+// mobile menu variables
+const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
+const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
+const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
+const overlay = document.querySelector('[data-overlay]');
+
+for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
+
+  // mobile menu function
+  const mobileMenuCloseFunc = function () {
+    mobileMenu[i].classList.remove('active');
+    overlay.classList.remove('active');
+  }
+
+  mobileMenuOpenBtn[i].addEventListener('click', function () {
+    mobileMenu[i].classList.add('active');
+    overlay.classList.add('active');
   });
+
+  mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
+  overlay.addEventListener('click', mobileMenuCloseFunc);
 
 }
 
 
 
-/**
- * header sticky
- */
-
-const header = document.querySelector("[data-header]");
-
-window.addEventListener("scroll", function () {
-
-  window.scrollY >= 10 ? header.classList.add("active") : header.classList.remove("active");
-
-});
 
 
+// accordion variables
+const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
+const accordion = document.querySelectorAll('[data-accordion]');
 
-/**
- * go top
- */
+for (let i = 0; i < accordionBtn.length; i++) {
 
-const goTopBtn = document.querySelector("[data-go-top]");
+  accordionBtn[i].addEventListener('click', function () {
 
-window.addEventListener("scroll", function () {
+    const clickedBtn = this.nextElementSibling.classList.contains('active');
 
-  window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
+    for (let i = 0; i < accordion.length; i++) {
 
-});
+      if (clickedBtn) break;
+
+      if (accordion[i].classList.contains('active')) {
+
+        accordion[i].classList.remove('active');
+        accordionBtn[i].classList.remove('active');
+
+      }
+
+    }
+
+    this.nextElementSibling.classList.toggle('active');
+    this.classList.toggle('active');
+
+  });
+
+}
